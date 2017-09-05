@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Innovation" max_length="40" name="x_25488_ia_innovation" type="collection">
+        <element label="Description" max_length="1000" name="description" type="string"/>
+        <element label="Idea Implemented" max_length="40" name="idea_implemented" type="boolean"/>
+        <element choice="1" label="Idea Type" max_length="40" name="idea_type" type="choice">
+            <choice>
+                <element label="Cost Savings" value="cost_saving"/>
+                <element label="Process Improvement" value="process_improvement"/>
+                <element label="Team Building" value="team_building"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Short Description" max_length="125" name="short_description" type="string"/>
+    </element>
+</database>
